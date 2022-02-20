@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="800"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="neuron.svg">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs13" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="800"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="1.18"
+     inkscape:cx="238.76683"
+     inkscape:cy="409.07685"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <circle
+     cx="400"
+     cy="400"
+     r="15"
+     id="circle4"
+     sodipodi:cx="400"
+     sodipodi:cy="400"
+     sodipodi:rx="15"
+     sodipodi:ry="15"
+     style="fill:none;stroke:#000000" />
+  <circle
+     cx="400"
+     cy="400"
+     r="45"
+     id="circle6"
+     sodipodi:cx="400"
+     sodipodi:cy="400"
+     sodipodi:rx="45"
+     sodipodi:ry="45"
+     style="fill:none;stroke:#000000" />
+  <g
+     id="neuron"
+     stroke="black"
+     fill="white"
+     stroke-width="1">
+    <path
+       d="m 383,336 c -9.73276,-21.41363 -25.99374,-38.78898 -50,-50 m 121.92373,77.54237 C 429.04071,326.26131 393.63908,299.40538 356,275 m -15,-2 c 2.27418,-17.77881 7.13361,-34.81897 15,-51 m 0,53 c 1.52894,-18.66667 5.09851,-37.33333 13,-56 m -8,-3 22,-30 m -14,33 19,-33 m -3,-3 15,-17 m -12,20 12,-20 m -17,20 -19,-17 m 21,14 -21,-14 m -8,53 -39,-20 m 44,14 -39,-16 m -3,-2 9,-21 m -6,23 6,-23 m -11,25 -23,-11 m 25,7 -25,-7 m 39,95 c -23.63552,-3.07786 -47.77167,-4.90417 -73,-4 m 81,-9 c -24.33333,-3.1186 -48.66667,-4.79447 -73,0 m -8,1 0,-37 m 8,36 -4,-39 m -4,-1 3,-22 m 1,23 -1,-23 m -3,26 -25,-2 m 25,-2 -25,2 m 25,47 -43,7 m 43,-15 -41,10 m -4,1 -4,-22 m 8,21 -8,-21 m 6,26 -26,5 m 24,-9 -24,9 m 143,103 c -23.41881,-5.0024 -46.27794,11.44538 -63,31 M 383.05193,336.43482 C 338.4037,346.81523 299.86495,368.65093 268,403 m -8,14 c -15.00587,-8.09742 -30.30195,-15.51768 -43,-29 m 51,15 c -18.00973,-7.31874 -35.16987,-15.91186 -50,-28 m -5,6 -22,-30 m 27,24 -26,-29 m -3,2 -12,-20 m 15,18 -15,-18 m 14,23 -22,13 m 20,-16 -20,16 m 48,24 -31,29 m 27,-36 -27,31 m -3,3 -17,-15 m 20,12 -20,-12 m 20,17 -17,19 m 14,-21 -14,21 m 102,-8 c -12.48647,19.18019 -19.84723,43.4861 -26,69 m 15,-80 c -10.23338,20.82497 -18.14745,43.38941 -22,69 m -1,8 -35,-11 m 36,3 -38,-8 m -2,3 -21,-9 m 23,6 -23,-6 m 25,11 -11,23 m 7,-25 -7,25 m 54,-9 -8,43 m 0,-46 -3,42 m -1,4 -22,-3 m 23,-1 -23,1 m 26,3 -2,25 m -2,-25 2,25 M 377,462 c -9.1388,22.21981 2.58163,46.25348 11,70 M 334.01892,396.95564 C 331.84871,441.69559 338.09576,485.44528 363,527 m 11,11 c -11.30648,12.20582 -25.10212,22.98926 -42,32 m 31,-43 c -10.66019,15.29034 -26.89348,26.59989 -43,38 m 4,7 -35,11 m 31,-18 -36,16 m 1,4 -22,4 m 21,-8 -21,8 m 26,-6 5,26 m -9,-24 9,24 m 38,-39 19,39 m -27,-37 22,36 m 2,3 -20,12 m 18,-15 -18,15 m 23,-14 13,22 m -16,-20 16,20 m 24,-99 c 14.9181,18.14476 34.73477,32.61559 56,46 m -70,-40 c 16.70786,17.54233 36.31713,31.02268 57,43 m 8,3 -22,30 m 14,-33 -19,33 m 3,3 -15,17 m 12,-20 -12,20 m 17,-20 19,17 m -21,-14 21,14 m 8,-53 39,20 m -44,-14 39,16 m 3,2 -9,21 m 6,-23 -6,23 m 11,-25 23,11 m -25,-7 25,7 M 451,441 c 21.08166,13.23628 45.87847,10.68316 70,11 M 376.85829,462.29962 C 418.57184,477.03465 462.49318,481.83465 509,475 m 14,-7 c 5.90406,14.05532 11.86936,27.43707 17,50 m -31,-43 c 10.35478,15.18284 16.5088,33.7263 23,52 m 8,-1 0,37 m -8,-36 4,39 m 4,1 -3,22 m -1,-23 1,23 m 3,-26 25,2 m -25,2 25,-2 m -25,-47 43,-7 m -43,15 41,-10 m 4,-1 4,22 m -8,-21 8,21 m -6,-26 26,-5 m -24,9 24,-9 m -88,-54 c 23.76135,-8.17553 42.92655,-24.0113 62,-40 m -60,56 c 23.64854,-9.4666 42.52395,-24.76702 59,-43 m 5,-6 22,30 m -27,-24 26,29 m 3,-2 12,20 m -15,-18 15,18 m -14,-23 22,-13 m -20,16 20,-16 m -48,-24 31,-29 m -27,36 27,-31 m 3,-3 17,15 m -20,-12 20,12 m -20,-17 17,-19 m -14,21 14,-21 m -176,0 c 18.62751,-18.6164 27.04235,-40.42427 33,-63 M 451.01892,440.74474 C 481.94132,402.99882 498.83622,362.53791 505,320 m -2,-16 c 16.83641,-2.81793 34.37646,-2.11768 52,-1 m -50,17 c 18.00354,-5.48762 37.42294,-6.01972 57,-6 m 1,-8 35,11 m -36,-3 38,8 m 2,-3 21,9 m -23,-6 23,6 m -25,-11 11,-23 m -7,25 7,-25 m -54,9 8,-43 m 0,46 3,-42 m 1,-4 22,3 m -23,1 23,-1 m -26,-3 2,-25 m 2,25 -2,-25 m -77,66 c -1.35866,-24.48328 -8.25551,-48.11454 -20,-71 m 35,74 c -4.90633,-23.34504 -11.72569,-46.45096 -23,-69 m -4,-7 35,-11 m -31,18 36,-16 m -1,-4 22,-4 m -21,8 21,-8 m -26,6 -5,-26 m 9,24 -9,-24 m -38,39 -19,-39 m 27,37 -22,-36 m -2,-3 20,-12 m -18,15 18,-15 m -23,14 -13,-22 m 16,20 -16,-20"
+       id="path9"
+       inkscape:connector-curvature="0"
+       style="fill:none"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+  </g>
+</svg>

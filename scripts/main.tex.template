@@ -1,0 +1,294 @@
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[main=russian,english,greek]{babel}
+\usepackage{titlesec}
+\usepackage{csquotes}
+\usepackage{indentfirst}
+\usepackage{epigraph}
+\usepackage{tocloft}
+\usepackage{makeidx}
+\usepackage[sorting=none]{biblatex}
+\usepackage[tikz]{bclogo}
+\usepackage{etoolbox}
+\usepackage{perpage}
+\usepackage{afterpage}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{nameref}
+\usepackage[numberedsection=nameref,toc,translate=babel]{glossaries}
+
+\titlelabel{\thetitle.\quad}
+
+\titleclass{\part}{top}
+\titleformat{\part}[hang]{\huge\bfseries}{\thepart.}{1em}{\Huge}
+\titlespacing{\part}{0pt}{2\parskip}{-2\parskip}
+
+\titleclass{\chapter}{straight}
+\titleformat{\chapter}[hang]{\huge\bfseries}{\thechapter.}{1em}{\Huge}
+\titlespacing{\chapter}{0pt}{2\parskip}{-2\parskip}
+
+\titlespacing{\section}{0pt}{5pt plus 2pt minus 2pt}{5pt plus 2pt minus 2pt}
+\titlespacing{\subsection}{0pt}{5pt plus 2pt minus 2pt}{5pt plus 2pt minus 2pt}
+\titlespacing{\subsubsection}{0pt}{5pt plus 2pt minus 2pt}{5pt plus 2pt minus 2pt}
+
+% The \@currentlabelname internal command which holds the section name is not updated,
+% for some reason, when redefining part with titlesec. 
+\makeatletter
+\let\titlesec@part\part
+\renewcommand{\part}{\@ifstar\part@star\part@nostar}
+\def\part@star#1{\NR@gettitle{#1}\titlesec@part*{#1}}
+\def\part@nostar{\@ifnextchar[\part@nostar@opt\part@nostar@nopt}
+\def\part@nostar@nopt#1{\NR@gettitle{#1}\titlesec@part{#1}}
+\def\part@nostar@opt[#1]#2{\NR@gettitle{#2}\titlesec@part[#1]{#2}}
+\makeatother
+
+% justifying in \epigraph
+\renewcommand{\textflush}{flushepinormal}
+\setlength\epigraphwidth{0.72\linewidth}
+
+\sloppy
+\interfootnotelinepenalty=10000
+\widowpenalty=10000
+
+\newcommand{\my}[1]{\protect\input{#1}\unskip}
+\newcommand{\myisbn}[1]{ISBN: #1\par}
+\newcommand{\myauthor}[1]{#1\par}
+\newcommand{\myemail}[1]{\small #1\par}
+\newcommand{\mysite}[1]{\small#1\par}
+\newcommand{\mytitle}[1]{\Huge \textbf{#1}\par}
+\newcommand{\mysubtitle}[1]{\large #1\par}
+\newcommand{\mycity}[1]{#1\par}
+\newcommand{\mypublisher}[1]{«#1»\par}
+\newcommand{\mydate}{\footnotesize \today\par}
+\newcommand{\myabstract}[1]{\noindent #1\par}
+\newcommand{\myeditor}[1]{\noindent Редактура и корректура: #1\par}
+\newcommand{\mycoverillustrator}[1]{\noindent Иллюстрации для обложки: #1\par}
+\newcommand{\mycopyright}[1]{Copyright \copyright #1 2016—2099\par}
+
+\newenvironment{seealsolist}
+{ \vspace{-\topsep}
+  \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}       }
+{ \end{itemize} \vspace{-\topsep}  } 
+
+\newenvironment{fromzerolist}
+{
+  \begin{enumerate}
+  \setcounter{enumi}{-1}
+}
+{ \end{enumerate}  } 
+
+\newenvironment{numparlist}
+{
+  \begingroup
+  \renewcommand\labelenumi{\theenumi)}
+  \begin{enumerate}
+}
+{ \end{enumerate} \endgroup  }
+
+\newenvironment{colophon}
+  {
+     \vspace{4cm}
+     \begin{minipage}[c]{8cm}
+  }
+  {
+    \end{minipage}
+  }
+
+\renewcommand{\glstextformat}[1]{\textit{#1}}
+\newcommand{\gl}[1]{\glslink{#1}}
+\newcommand{\acronym}[1]{\glslink{#1}}
+
+\newcommand{\fullref}[1]{%
+  \footnote{См.~§\,\ref{#1}
+  «\nameref{#1}»,
+  стр.~\pageref{#1}.}%
+}
+
+\newcommand{\simplefullref}[1]{%
+  \textit{§\,\ref{#1}
+  «\nameref{#1}»,
+  стр.~\pageref{#1}}%
+}
+
+\newcommand{\note}[2]{%
+  \begin{samepage}
+  \begin{bclogo}[logo=\bclampe, arrondi=0.2, barre=snake]{#1}
+  #2
+  \end{bclogo}
+  \end{samepage}%
+}
+
+\newcommand{\emphasis}[1]{\textbf{#1}}
+\newcommand{\parheader}[1]{\vspace{0.2cm}\emphasis{#1}}
+
+\newcommand{\spar}{}
+\newcommand{\epar}{\par}
+\newcommand{\myendpart}[1]{}
+\newcommand{\myendchapter}[1]{}
+\newcommand{\myendsection}[1]{}
+\newcommand{\myendsubsection}[1]{}
+\newcommand{\myendsubsubsection}[1]{}
+
+\newenvironment{ruquotation}
+    {\begin{quotation}«\ignorespaces}
+    {\unskip».\end{quotation}}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+%\DeclareFieldFormat*{citetitle}{«#1»}
+
+\setlength{\cftsecnumwidth}{2.7em}
+\setlength{\cftsubsecnumwidth}{3.5em}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\MakePerPage{footnote}
+
+\babelhyphenation{соз-дав
+соз-да-ва-емом
+соз-да-ва-емые
+соз-да-ва-емых
+соз-да-вал
+соз-да-ва-лась
+соз-да-ва-ли
+соз-да-ва-лись
+соз-да-вал-ся
+соз-да-вать
+соз-да-ваться
+соз-да-вая
+соз-дав-шей
+соз-да-дим
+соз-да-дут
+соз-да-ёт
+соз-дал
+соз-да-ли
+соз-дан
+соз-да-ние
+соз-да-ни-ем
+соз-да-нии
+соз-да-нию
+соз-да-ния
+соз-дан-но-го
+соз-дан-ное
+соз-дан-ный
+соз-дан-ным
+соз-дан-ных
+соз-да-но
+соз-да-ны
+соз-даст
+соз-да-те-ли
+соз-да-те-лю
+соз-да-те-ля
+соз-да-те-лям
+соз-дать
+соз-да-ют
+соз-да-ют-ся
+соз-даю-щая
+соз-даю-щие
+соз-даю-щую
+соз-да-ём
+соз-да-ёт
+соз-да-ёт-ся
+соз-да-ёшь
+соз-да-вать-ся
+возоб-нов-лять
+возоб-нов-ляемую
+возоб-нов-ляются
+возоб-нов-ляемый
+возоб-нов-ляемых
+инструменто-поклонничество
+несейсмо-опасных
+средне-рыночной
+транс-акционные
+интер-операбельность
+серьёз-ный
+}
+
+\input{glossary}
+
+\makeindex
+
+\newglossarystyle{myList}{%
+    \setglossarystyle{list}%
+    \renewcommand*{\glossentry}[2]{%
+        \item[\glsentryitem{##1}%
+        \glstarget{##1}{\glossentryname{##1}}]
+        \glossentrydesc{##1}\glspostdescription\space ##2.}
+}
+
+\makeglossaries
+
+\bibliography{bibliography}
+
+\pagestyle{plain}
+
+\begin{document}
+
+%\begin{titlepage}
+%  {\centering
+%  \myauthor{AUTHOR_TAG}
+%  \vspace{5cm}
+%  \mytitle{TITLE_TAG}
+%  \mysubtitle{SUBTITLE_TAG}
+%  \vfill
+%  \mypublisher{PUBLISHER_TAG}
+%  \mycity{CITY_TAG}
+%  \mydate
+%  \newpage
+%  \thispagestyle{empty}
+%  \myisbn{ISBN_TAG}
+%  \myauthor{AUTHOR_TAG}
+%  \myemail{EMAIL_TAG}
+%  \mysite{SITE_TAG}
+%  \vspace{4cm}
+%  \mytitle{TITLE_TAG}
+%  \mysubtitle{SUBTITLE_TAG}
+%  \vfill
+%  \mypublisher{PUBLISHER_TAG}
+%  \mycity{CITY_TAG}
+%  \mydate
+%  \vspace{1cm}
+%  }
+%  \myabstract{ABSTRACT_TAG}
+%  \centering
+%  \vspace{0.4cm}
+%  \mycopyright{COPYRIGHT_TAG}
+%  \input{LICENSE_TAG}
+%\end{titlepage}
+
+\setcounter{page}{3}
+
+\tableofcontents
+
+\input{book}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{INDEX_NAME_TAG}
+\printindex
+
+\printglossary[style=myList]
+
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+\printbibliography
+
+\begin{colophon}
+  \myeditor{EDITOR_TAG}
+  \mycoverillustrator{COVER_ILLUSTRATOR_TAG}
+  \vspace{0.4cm}
+  \noindent COLOPHON_TEXT_TAG
+\end{colophon}
+
+\afterpage{\blankpage}
+\afterpage{\blankpage}
+\afterpage{\blankpage}
+
+\end{document}
