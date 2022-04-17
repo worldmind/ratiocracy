@@ -1,4 +1,0 @@
-selenium
-regex
-bibtexparser
-in_place

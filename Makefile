@@ -88,10 +88,11 @@ epub3:
 	echo 'CREATE epub3' | tee -a $(LOG_FILE)
 	mkdir -p epub
 	xsltproc --xinclude $(XSL_DIR)/epub3-params.xsl $(NAME).docbook >> $(LOG_FILE) 2>&1
-	cd epub; zip -0Xq ../$(FILE_DIR)/$(NAME).epub mimetype >> $(LOG_FILE) 2>&1
-	cd epub; zip -Xr9D ../$(FILE_DIR)/$(NAME).epub META-INF OEBPS >> $(LOG_FILE) 2>&1
+	python3 scripts/fix_epub.py
+	cd epub; zip -0Xq ../$(FILE_DIR)/$(NAME).epub mimetype >> ../$(LOG_FILE) 2>&1
+	cd epub; zip -Xr9D ../$(FILE_DIR)/$(NAME).epub META-INF OEBPS >> ../$(LOG_FILE) 2>&1
 # FIXME not valid
-#	epubcheck $(FILE_DIR)/$(NAME).epub 
+	epubcheck $(FILE_DIR)/$(NAME).epub 
 
 odt: htmlonepage
 	echo 'CREATE odt' | tee -a $(LOG_FILE)

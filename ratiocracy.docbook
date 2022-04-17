@@ -47,7 +47,7 @@
     </othercredit>
     <copyright>
       <year>
-        <?dbtimestamp format="Y"?>
+        2022
       </year>
       <holder>Алексей Шруб</holder>
     </copyright>
@@ -16085,8 +16085,7 @@
           </para>
           <para>
             Есть интересная идея обеспечивать деньги энергией, связать денежную единицу с
-            энергетической (джоулем) <citation>ffaa</citation> (хотя описана она людьми немного других
-            взглядов и несколько сложна для восприятия). Энергия действительно достаточно
+            энергетической (джоулем). Энергия действительно достаточно
             универсальное мерило ценности, но не похоже, что такое можно реализовать на
             практике, — скорее всего, это потребует тотального контроля и бюрократизации и
             всё равно породит чёрный рынок и дефицит.
@@ -18526,16 +18525,6 @@
       <title>Корпус экспертов</title>
       <bibliosource class="uri">
         <link xlink:href="http://expertcorps.ru/science/methods"/>
-      </bibliosource>
-    </biblioentry>
-    <biblioentry>
-      <abbrev>ffaa</abbrev>
-      <author>
-        <personname>Анонимный коллектив авторов</personname>
-      </author>
-      <title>Энергометрологическая экономика</title>
-      <bibliosource class="uri">
-        <link xlink:href="http://www.ffaa.info/files/EmEk 2017.pdf"/>
       </bibliosource>
     </biblioentry>
     <biblioentry>
