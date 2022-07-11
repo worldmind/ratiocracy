@@ -54,6 +54,8 @@ pdfa5: glossa5
 	cp -f $(NAME)-a5.pdf $(FILE_DIR)
 	echo 'Done' | tee -a $(LOG_FILE)
 
+a5: pdfa5
+
 pdfa6: glossa6
 	echo 'CREATE pdf A6' | tee -a $(LOG_FILE)
 	rubber --pdf $(NAME)-a6 >> $(LOG_FILE) 2>&1

@@ -290,8 +290,7 @@ if __name__ == '__main__':
 
     Path('ratiocracy-a5.tex').write_text(r"""\documentclass[11pt,oneside]{book}
 \usepackage[
-  paperheight=205mm,
-  paperwidth=145mm,
+  a5paper,
   left=20mm,
   right=14mm,
   top=14mm,
