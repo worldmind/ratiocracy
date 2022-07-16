@@ -190,6 +190,8 @@ if __name__ == '__main__':
     result = re.sub('\n+', '\n', result, flags=re.DOTALL)
     result = result.replace(r'\part{Предисловие}', r'\part*{Предисловие}')
     result = result.replace(r'\label{intro}', r'\label{intro}'+'\n'+r'\addcontentsline{toc}{part}{Предисловие}')
+    result = result.replace(r'\part{Заключение}', r'\part*{Заключение}')
+    result = result.replace(r'\label{afterword}', r'\label{afterword}'+'\n'+r'\addcontentsline{toc}{part}{Заключение}')
     result = result.replace(r'\chapter{Инструментопоклонничество}', r'\chapter{Инструменто\-поклонничество}')
     result = result.replace(r'κράτος', r'\textgreek{κράτος}')
 
