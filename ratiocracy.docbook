@@ -17832,7 +17832,19 @@
       </para>
     </sect1>
   </chapter>
+
+  <chapter xml:id="afterword">
+    <info>
+      <title>Заключение</title>
+    </info>
+    <para>
+      Честно говоря, я не знаю, что сказать в заключение — думайте и подталкивайте думать других.
+    </para>
+  </chapter>
+
+  
   <index/>
+
   <glossary xml:id="main">
     <title>Словарь терминов</title>
     <glossentry xml:id="rationality_t">
