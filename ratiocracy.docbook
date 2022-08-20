@@ -4831,11 +4831,11 @@
         <indexterm><primary>Этика</primary></indexterm>
         <para>
           Из <glossterm linkend="right_t">прав</glossterm> индивида (см. <xref linkend="rights"/>)
-          и принципа прямой
-          демократии (см. <xref linkend="democracy"/>) следует, что общество вправе защищать свою
-          <glossterm linkend="freedom_t">свободу</glossterm> от тех, кто пытается захватить власть,
-          в том числе путём
-          <glossterm linkend="violence_t">насилия</glossterm>, если иные способы не помогли.
+          и принципа прямой демократии (см. <xref linkend="democracy"/>) следует, что общество
+          вправе защищать свою <glossterm linkend="freedom_t">свободу</glossterm> от тех, кто
+          пытается захватить власть, в том числе путём <glossterm linkend="violence_t">насилия</glossterm>,
+          если иные способы не помогли.
+          В частности, это означает, что убйство узурпатора не является преступлением.
         </para>
       </sect2>
       <sect2 xml:id="rent_right">
