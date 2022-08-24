@@ -48,3 +48,4 @@ epub/
 *.bib
 *.tex
 *.mst
+*.rubbercache
