@@ -169,8 +169,8 @@ def xlink(tag_name):
 def latex_post_process(text):
     text = text.replace("\u00A0", '~')
     text = re.sub(r'\(см.~(\\fullref{[^}]+})\)', r'\1', text)
-    text = text.replace(r'×', r'\times')
     text = text.replace(r'%', r'\%')
+    text = text.replace(r'&', r'\&')
     text = re.sub('\s+\n', '\n', text)
     text = re.sub(r'(.)\u0301', r"\\'{\1}", text, flags=re.DOTALL)
 
@@ -239,7 +239,7 @@ if __name__ == '__main__':
     data = data.replace('COVER_ILLUSTRATOR_TAG', illustrator)
     data = data.replace('INDEX_NAME_TAG', 'Предметный указатель')  # FIXME, check what docbook use
     data = data.replace('COLOPHON_TEXT_TAG', root.find("./db:colophon/db:para", ns).text)
-
+    data = data.replace(r'&', r'\&')
     Path('main.tex').write_text(data)
 
     # Conver glossary
